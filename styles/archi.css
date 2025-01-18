@@ -21,33 +21,119 @@
 .text-light-gray{
     color: #727272;
 }
+.btn-primary{
+    padding: 20px 24px;
+    background-color: #FF900E;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.gap-bottom{
+    margin-bottom: 25px;
+}
 /* Header Section */
 .bg-light{
     background-color: rgba(255, 144, 14, 0.1);
     
 }
-.nav , .title-bar, .banner{
-    width: 1200px;
+.nav , .title-bar, .banner-img{
+    width: 80vw;
     margin: 0 auto;
 }
 .nav{
     /* padding: 30px 150px 60px 150px; */
     align-items: center;
     justify-content: space-between;
+    padding-top: 40px;
 }
 .navbar{
     gap: 40px;
 }
 .brand-name{
-    font-size: 35px;
+    font-size: 2rem;
 }
 .nav-item{
     list-style: none;
-    font-size: 17px;
+    font-size: 1.1rem;
 
 }
 
 .nav-link{
     text-decoration: none;
+    font-weight: 500;
 
+}
+/* banner related Styles */
+.title-bar{
+    max-width: 50rem;
+}
+.title{
+    font-size: 3rem;
+}
+.subtitle{
+    font-size: 16px;
+
+}
+.banner{
+    text-align: center;
+    margin-top: 100px;
+}
+.banner-img{
+    margin-top: 1.5rem;
+    width: 75vw;
+}
+
+/* Pictures & features Section Styles */
+.container{
+    width: 75vw;
+    margin: 70px auto;
+    align-items: center;
+    gap: 50px;
+}
+.img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.title-container{
+
+}
+.feature-title{
+    font-size: 3rem;
+}
+#quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+#features{
+    color: #FF900E;
+}
+
+@media screen and (max-width:580px) {
+    .nav, .navbar{
+        flex-direction: column;
+    }
+    .navbar{
+        gap: 5px;
+        margin-top:10px ;
+        text-align: center;
+        padding: 5px;
+    }
+    .banner{
+        margin-top: 2rem;
+    }
+    /* 2nd Page styles in mobile */
+    .container{
+        flex-direction: column;
+    }
+    .img-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+/* Medium Devices */
+@media screen and (min-width:580px) and (max-width:992px) {
+    .container{
+        flex-direction: column;
+    }
 }
